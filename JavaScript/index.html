@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <p id="msg">Hello</p>
+    <p id="item">One</p>
+    <p id="item">Two</p>
+    <div id="msg"></div>
+    <p id="msg"></p>
+    <button id='submit'>Show Message</button>-->
+    <h1>R P S</h1>
+    <button>Rock</button>
+    <button>Paper</button>
+    <button>Scissor</button>
+    <script>
+    <!--   document.getElementById("submit").addEventListener("click",()=>{
+            document.getElementById("msg")
+        })
+        document.getElementById('msg').innerHTML="<p>Hello</p>"
+        document.getElementById('msg').style.color="Red"
+        var item = document.getElementById('item')
+        item[0].style.color="Green"
+        document.querySelector('#msg').style.backgroundColor="blue"
+        document.querySelector('.list').style.backgroundColor="red"
+        document.querySelector('p').style.backgroundColor="yellow"--> 
+        const getResult=(userChoice)=>{
+            var choice=['rock','pepper','scissor'];
+            var comChoice=choice[Math.floor(Math.random()*3)]
+            console.log(comChoice)
+            var res=""
+            if(userChoice===comChoice) res="Draw"
+            else if((userChoice==="rock" && comChoice==='paper') || (userChoice==="paper" && comChoice==='scissor') || (userChoice==="scissor" && comChoice==='rock'))
+        {
+            res="Loss"
+        }
+        else{
+            res="Win"
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-var p=20
+/*var p=20
 var q="hello"
 var r=true
 var s=null
@@ -357,3 +357,41 @@ var Demo=()=>{
     }, 2000)
 }   
 Demo()
+*/
+//template literals
+var age=24;
+var str=`vikram age is ${age}`
+console.log(str);
+
+//map
+var arr=[1,2,3,4]
+var double=arr.map(num=>num*2)
+console.log(double)
+
+//filter
+var even=arr.filter((num)=>(num%2===0))
+console.log(even)
+
+//reduce
+var total=arr.reduce((sum,num)=>(sum+num),0)
+console.log(total)
+
+var evenCount=arr.map(num=>num**3).filter(num=>num%2===0).reduce((sum,num)=>(sum+1),0)
+console.log(evenCount)
+
+var student =[{name:"viky",marks:90},
+    {name:"Jeeva",marks:85},
+    {name:"Raja",marks:87}
+]
+var studentMark=student.filter(s=>s.marks>86)
+console.log(studentMark)
+
+var studentName = student.map(s=>s.name);
+console.log(studentName);
+
+//reduce
+var totlaMarks=student.reduce((sum,s)=>(sum+s.marks),0);
+console.log(totlaMarks);
+
+var avg=totlaMarks/student.length;
+console.log(avg);
